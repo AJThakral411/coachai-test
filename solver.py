@@ -1,2 +1,4 @@
 def average(numbers):
-    return sum(numbers) / len(numbers) + 1
+    if not numbers:
+        raise ValueError("average() needs at least one number")
+    return sum(numbers) / len(numbers)
